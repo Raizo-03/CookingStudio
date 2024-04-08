@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace CookingStudio
 {
-    public partial class Form1 : Form
+    public partial class ConfirmationForm : Form
     {
-        public Form1()
+        public ConfirmationForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+        }
+
+        private void ConfirmationForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
