@@ -12,12 +12,25 @@ namespace CookingStudio
 {
     public partial class BookingOverviewForm : Form
     {
-        public BookingOverviewForm()
+        String firstName;
+        String lastName;
+        String email;
+        String telephoneNumber;
+        int numberOfPeople;
+        String selectedCourse;
+        int totalPrice;
+        public BookingOverviewForm(string firstName, string lastName, string email, string telephoneNumber, int numberOfPeople, string selectedCourse, int totalPrice)
         {
             InitializeComponent();
             this.FormClosing += BookingOverviewForm_FormClosing;
             this.StartPosition = FormStartPosition.CenterScreen;
-
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.email = email;
+            this.telephoneNumber = telephoneNumber;
+            this.numberOfPeople = numberOfPeople;
+            this.selectedCourse = selectedCourse;
+            this.totalPrice = totalPrice;
         }
         private void BookingOverviewForm_FormClosing(object sender, FormClosingEventArgs e)
         {

@@ -34,14 +34,14 @@
             this.courseTextbox = new System.Windows.Forms.TextBox();
             this.courseLabel = new System.Windows.Forms.Label();
             this.peopleLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numberTextbox = new System.Windows.Forms.TextBox();
+            this.numofpeopleTextbox = new System.Windows.Forms.TextBox();
+            this.telephonenumberTextbox = new System.Windows.Forms.TextBox();
             this.numberLabel = new System.Windows.Forms.Label();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lastnameTextbox = new System.Windows.Forms.TextBox();
             this.lastnameLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.firstnameTextbox = new System.Windows.Forms.TextBox();
             this.firstnameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -106,23 +106,23 @@
             this.peopleLabel.TabIndex = 66;
             this.peopleLabel.Text = "Number of People";
             // 
-            // textBox3
+            // numofpeopleTextbox
             // 
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(48, 252);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 25);
-            this.textBox3.TabIndex = 65;
+            this.numofpeopleTextbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.numofpeopleTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numofpeopleTextbox.Location = new System.Drawing.Point(48, 252);
+            this.numofpeopleTextbox.Name = "numofpeopleTextbox";
+            this.numofpeopleTextbox.Size = new System.Drawing.Size(199, 25);
+            this.numofpeopleTextbox.TabIndex = 65;
             // 
-            // numberTextbox
+            // telephonenumberTextbox
             // 
-            this.numberTextbox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.numberTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberTextbox.Location = new System.Drawing.Point(48, 194);
-            this.numberTextbox.Name = "numberTextbox";
-            this.numberTextbox.Size = new System.Drawing.Size(476, 25);
-            this.numberTextbox.TabIndex = 64;
+            this.telephonenumberTextbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.telephonenumberTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.telephonenumberTextbox.Location = new System.Drawing.Point(48, 194);
+            this.telephonenumberTextbox.Name = "telephonenumberTextbox";
+            this.telephonenumberTextbox.Size = new System.Drawing.Size(476, 25);
+            this.telephonenumberTextbox.TabIndex = 64;
             // 
             // numberLabel
             // 
@@ -153,14 +153,14 @@
             this.emailLabel.TabIndex = 61;
             this.emailLabel.Text = "E-mail Address";
             // 
-            // textBox2
+            // lastnameTextbox
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(445, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(311, 25);
-            this.textBox2.TabIndex = 60;
+            this.lastnameTextbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lastnameTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnameTextbox.Location = new System.Drawing.Point(445, 72);
+            this.lastnameTextbox.Name = "lastnameTextbox";
+            this.lastnameTextbox.Size = new System.Drawing.Size(311, 25);
+            this.lastnameTextbox.TabIndex = 60;
             // 
             // lastnameLabel
             // 
@@ -172,14 +172,14 @@
             this.lastnameLabel.TabIndex = 59;
             this.lastnameLabel.Text = "Last Name";
             // 
-            // textBox1
+            // firstnameTextbox
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(48, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 25);
-            this.textBox1.TabIndex = 58;
+            this.firstnameTextbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.firstnameTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameTextbox.Location = new System.Drawing.Point(48, 72);
+            this.firstnameTextbox.Name = "firstnameTextbox";
+            this.firstnameTextbox.Size = new System.Drawing.Size(311, 25);
+            this.firstnameTextbox.TabIndex = 58;
             // 
             // firstnameLabel
             // 
@@ -202,14 +202,14 @@
             this.Controls.Add(this.courseTextbox);
             this.Controls.Add(this.courseLabel);
             this.Controls.Add(this.peopleLabel);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.numberTextbox);
+            this.Controls.Add(this.numofpeopleTextbox);
+            this.Controls.Add(this.telephonenumberTextbox);
             this.Controls.Add(this.numberLabel);
             this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.emailLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lastnameTextbox);
             this.Controls.Add(this.lastnameLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.firstnameTextbox);
             this.Controls.Add(this.firstnameLabel);
             this.Name = "BookingDataForm";
             this.Text = "Booking Data";
@@ -227,14 +227,14 @@
         private System.Windows.Forms.TextBox courseTextbox;
         private System.Windows.Forms.Label courseLabel;
         private System.Windows.Forms.Label peopleLabel;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox numberTextbox;
+        private System.Windows.Forms.TextBox numofpeopleTextbox;
+        private System.Windows.Forms.TextBox telephonenumberTextbox;
         private System.Windows.Forms.Label numberLabel;
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.Label emailLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox lastnameTextbox;
         private System.Windows.Forms.Label lastnameLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox firstnameTextbox;
         private System.Windows.Forms.Label firstnameLabel;
     }
 }
