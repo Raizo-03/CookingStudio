@@ -40,7 +40,26 @@ namespace CookingStudio
 
         private void BookingOverviewForm_Load(object sender, EventArgs e)
         {
+            UsersFName.Text = firstName;
+            UsersLName.Text = lastName;
+            UsersEmail.Text = email;
+            UsersTelephone.Text = telephoneNumber;
+            UsersNumPeople.Text = numberOfPeople.ToString();
+            UsersTotalPrice.Text = "$ " + totalPrice.ToString();
 
+            //Course
+            if (selectedCourse.Equals("traditional"))
+            {
+                UserChosenCourse.Text = "Spanish: Traditional ";
+            }
+            else if (selectedCourse.Equals("vegetarian"))
+            {
+                UserChosenCourse.Text = "Spanish: Vegetarian and Healthy";
+            }
+            else if (selectedCourse.Equals("grill"))
+            {
+                UserChosenCourse.Text = "Spanish: Healthy and Fresh from Grill";
+            }
         }
 
         private void confirmButton_Click(object sender, EventArgs e)
