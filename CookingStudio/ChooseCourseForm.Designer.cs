@@ -35,12 +35,12 @@
             this.grillFridayButton = new System.Windows.Forms.Button();
             this.spanishHealthyGrillLabel = new System.Windows.Forms.Label();
             this.grillSaturdayButton = new System.Windows.Forms.Button();
-            this.priceTextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.furtherButton = new System.Windows.Forms.Button();
             this.traditionalDatePicker = new System.Windows.Forms.DateTimePicker();
             this.vegetableDatePicker = new System.Windows.Forms.DateTimePicker();
             this.freshfromgrillDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.priceTextbox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // spanishTraditionalLabel
@@ -117,14 +117,6 @@
             this.grillSaturdayButton.UseVisualStyleBackColor = true;
             this.grillSaturdayButton.Click += new System.EventHandler(this.grillSaturdayButton_Click);
             // 
-            // priceTextbox
-            // 
-            this.priceTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTextbox.Location = new System.Drawing.Point(85, 422);
-            this.priceTextbox.Name = "priceTextbox";
-            this.priceTextbox.Size = new System.Drawing.Size(631, 25);
-            this.priceTextbox.TabIndex = 7;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -171,17 +163,27 @@
             this.freshfromgrillDatePicker.TabIndex = 12;
             this.freshfromgrillDatePicker.ValueChanged += new System.EventHandler(this.freshfromgrillDatePicker_ValueChanged);
             // 
+            // priceTextbox
+            // 
+            this.priceTextbox.AutoSize = true;
+            this.priceTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceTextbox.Location = new System.Drawing.Point(82, 434);
+            this.priceTextbox.Name = "priceTextbox";
+            this.priceTextbox.Size = new System.Drawing.Size(92, 17);
+            this.priceTextbox.TabIndex = 13;
+            this.priceTextbox.Text = "Price in USD";
+            // 
             // ChooseCourseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
+            this.Controls.Add(this.priceTextbox);
             this.Controls.Add(this.freshfromgrillDatePicker);
             this.Controls.Add(this.vegetableDatePicker);
             this.Controls.Add(this.traditionalDatePicker);
             this.Controls.Add(this.furtherButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.priceTextbox);
             this.Controls.Add(this.grillSaturdayButton);
             this.Controls.Add(this.grillFridayButton);
             this.Controls.Add(this.spanishHealthyGrillLabel);
@@ -191,6 +193,7 @@
             this.Controls.Add(this.spanishTraditionalLabel);
             this.Name = "ChooseCourseForm";
             this.Text = "Choose Your Course";
+            this.Load += new System.EventHandler(this.ChooseCourseForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,11 +208,11 @@
         private System.Windows.Forms.Button grillFridayButton;
         private System.Windows.Forms.Label spanishHealthyGrillLabel;
         private System.Windows.Forms.Button grillSaturdayButton;
-        private System.Windows.Forms.TextBox priceTextbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button furtherButton;
         private System.Windows.Forms.DateTimePicker traditionalDatePicker;
         private System.Windows.Forms.DateTimePicker vegetableDatePicker;
         private System.Windows.Forms.DateTimePicker freshfromgrillDatePicker;
+        private System.Windows.Forms.Label priceTextbox;
     }
 }

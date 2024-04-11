@@ -14,14 +14,17 @@ namespace CookingStudio
 {
     public partial class ChooseCourseForm : Form
     {
+        String language;
         String course;
+        DateTime selectedDate;
         private bool traditionalButtonClicked = false;
         private bool vegetableButtonClicked = false;
         private bool grillButtonClicked = false;
 
-        public ChooseCourseForm()
+        public ChooseCourseForm(String Language)
         {
             InitializeComponent();
+            this.language = Language;
             //Code that makes the form in the center
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -36,7 +39,7 @@ namespace CookingStudio
             freshfromgrillDatePicker.ValueChanged += freshfromgrillDatePicker_ValueChanged;
 
             // Set initial dates
-            vegetableDatePicker.Value = GetNearestTuesday(DateTime.Today);
+            vegetableDatePicker.Value = GetNearestWednesday(DateTime.Today);
             freshfromgrillDatePicker.Value = GetNearestFridayOrSaturday(DateTime.Today);
 
         }
@@ -63,7 +66,8 @@ namespace CookingStudio
                 return;
             }
 
-            BookingDataForm bookingData = new BookingDataForm(course);
+            
+            BookingDataForm bookingData = new BookingDataForm(course, selectedDate);
             bookingData.Show();
             this.Hide();
         }
@@ -92,22 +96,24 @@ namespace CookingStudio
 
         private void vegetableDatePicker_ValueChanged(object sender, EventArgs e)
         {
-            // Check if the selected date is not Tuesday
-            if (vegetableDatePicker.Value.DayOfWeek != DayOfWeek.Tuesday)
+            // Check if the selected date is not Wednesday
+            if (vegetableDatePicker.Value.DayOfWeek != DayOfWeek.Wednesday)
             {
                 // Display error message
-                MessageBox.Show("You can only choose dates from Tuesdays of the year.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You can only choose dates from Wednesdays of the year.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                // Reset the date to the nearest Tuesday
-                vegetableDatePicker.Value = GetNearestTuesday(DateTime.Today);
+                // Reset the date to the nearest Wednesday
+                vegetableDatePicker.Value = GetNearestWednesday(DateTime.Today);
             }
         }
-        // Method to get the nearest Tuesday to a given date
-        private DateTime GetNearestTuesday(DateTime date)
+
+        // Method to get the nearest Wednesday to a given date
+        private DateTime GetNearestWednesday(DateTime date)
         {
-            int daysUntilTuesday = ((int)DayOfWeek.Tuesday - (int)date.DayOfWeek + 7) % 7;
-            return date.AddDays(daysUntilTuesday);
+            int daysUntilWednesday = ((int)DayOfWeek.Wednesday - (int)date.DayOfWeek + 7) % 7;
+            return date.AddDays(daysUntilWednesday);
         }
+
 
 
         private void freshfromgrillDatePicker_ValueChanged(object sender, EventArgs e)
@@ -144,12 +150,17 @@ namespace CookingStudio
         {
             traditionalButtonClicked = true;
             priceTextbox.Text = "$ 40";
+            selectedDate = traditionalDatePicker.Value;
+
+
+
         }
 
         private void vegetableButton_Click(object sender, EventArgs e)
         {
             vegetableButtonClicked = true;
             priceTextbox.Text = "$ 50";
+            selectedDate = vegetableDatePicker.Value;
 
         }
 
@@ -157,6 +168,7 @@ namespace CookingStudio
         {
             grillButtonClicked = true;
             priceTextbox.Text = "$ 80";
+            selectedDate = freshfromgrillDatePicker.Value;
 
         }
 
@@ -164,7 +176,16 @@ namespace CookingStudio
         {
             grillButtonClicked = true;
             priceTextbox.Text = "$ 80";
+            selectedDate = freshfromgrillDatePicker.Value;
 
         }
+
+        private void ChooseCourseForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
     }
 }

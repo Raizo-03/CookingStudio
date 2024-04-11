@@ -42,6 +42,7 @@
             this.germanLanguageButton.TabIndex = 5;
             this.germanLanguageButton.Text = "German";
             this.germanLanguageButton.UseVisualStyleBackColor = true;
+            this.germanLanguageButton.Click += new System.EventHandler(this.germanLanguageButton_Click_1);
             // 
             // englishLanguageButton
             // 
@@ -63,6 +64,7 @@
             this.spanishLanguageButton.TabIndex = 3;
             this.spanishLanguageButton.Text = "Spanish";
             this.spanishLanguageButton.UseVisualStyleBackColor = true;
+            this.spanishLanguageButton.Click += new System.EventHandler(this.spanishLanguageButton_Click_1);
             // 
             // LanguageForm
             // 

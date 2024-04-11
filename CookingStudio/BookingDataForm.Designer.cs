@@ -65,6 +65,7 @@
             this.totalpriceTextbox.ReadOnly = true;
             this.totalpriceTextbox.Size = new System.Drawing.Size(565, 25);
             this.totalpriceTextbox.TabIndex = 70;
+            this.totalpriceTextbox.TextChanged += new System.EventHandler(this.totalpriceTextbox_TextChanged);
             // 
             // totalpriceLabel
             // 
@@ -114,6 +115,7 @@
             this.numofpeopleTextbox.Name = "numofpeopleTextbox";
             this.numofpeopleTextbox.Size = new System.Drawing.Size(199, 25);
             this.numofpeopleTextbox.TabIndex = 65;
+            this.numofpeopleTextbox.TextChanged += new System.EventHandler(this.numofpeopleTextbox_TextChanged);
             // 
             // telephonenumberTextbox
             // 
@@ -123,6 +125,7 @@
             this.telephonenumberTextbox.Name = "telephonenumberTextbox";
             this.telephonenumberTextbox.Size = new System.Drawing.Size(476, 25);
             this.telephonenumberTextbox.TabIndex = 64;
+            this.telephonenumberTextbox.TextChanged += new System.EventHandler(this.telephonenumberTextbox_TextChanged);
             // 
             // numberLabel
             // 
@@ -161,6 +164,7 @@
             this.lastnameTextbox.Name = "lastnameTextbox";
             this.lastnameTextbox.Size = new System.Drawing.Size(311, 25);
             this.lastnameTextbox.TabIndex = 60;
+            this.lastnameTextbox.TextChanged += new System.EventHandler(this.lastnameTextbox_TextChanged);
             // 
             // lastnameLabel
             // 
@@ -180,6 +184,7 @@
             this.firstnameTextbox.Name = "firstnameTextbox";
             this.firstnameTextbox.Size = new System.Drawing.Size(311, 25);
             this.firstnameTextbox.TabIndex = 58;
+            this.firstnameTextbox.TextChanged += new System.EventHandler(this.firstnameTextbox_TextChanged);
             // 
             // firstnameLabel
             // 

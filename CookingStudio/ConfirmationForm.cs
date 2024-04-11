@@ -16,9 +16,13 @@ namespace CookingStudio
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-
+            this.FormClosing += ConfirmationForm_FormClosing;
         }
-
+        private void ConfirmationForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Ensure that the application exits when the main form is closed
+            Application.Exit();
+        }
         private void ConfirmationForm_Load(object sender, EventArgs e)
         {
 
