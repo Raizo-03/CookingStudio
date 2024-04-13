@@ -14,7 +14,7 @@ namespace CookingStudio
 {
     public partial class LanguageForm : Form
     {
-        //language Checker
+        //These are the variables so that it can detect what language does the user chose
         private bool englishLanguage = false;
         private bool spanishLanguage = false;
         private bool germanLanguage = false;
@@ -22,56 +22,69 @@ namespace CookingStudio
         public LanguageForm()
         {
             InitializeComponent();
+
+            //This code is for the form to be in the center position
             this.StartPosition = FormStartPosition.CenterScreen;
-
-            this.FormClosing += Language_FormClosing;
-
-        }
-        private void spanishLanguageButton_Click(object sender, EventArgs e)
-        {
-            // Switch to the course panel TabPage
         }
 
-        private void germanLanguageButton_Click(object sender, EventArgs e)
-        {
-            // Switch to the course panel TabPage
-        }
-
+        //This code block ensure that the application exits when the main form is closed
         private void Language_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Ensure that the application exits when the main form is closed
             Application.Exit();
         }
 
-
+        //This code block executes the functions embedded in it when the form is loaded
         private void LanguageForm_Load(object sender, EventArgs e)
         {
-           
+           //This is the instance of form when closing- it calls the method Language_FormClosing
+            this.FormClosing += Language_FormClosing;
+
+            //This code ensures that the form is not resizable
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
         }
 
+
+
+        //This code block is for the functions of the english language button
         private void englishLanguageButton_Click_1(object sender, EventArgs e)
         {
+
             englishLanguage = true;
             String language = LanguageChecker();
 
+            //Creates an instance of the booking data form so that it loads the  booking data form
+            ChooseCourseForm courseForm = new ChooseCourseForm(language);
+            courseForm.Show();
+            this.Hide();
+        }
+        //This code block is for the functions of the spanish language button
 
+        private void spanishLanguageButton_Click_1(object sender, EventArgs e)
+        {
+            spanishLanguage = true;
+            String language = LanguageChecker();
+
+            //Creates an instance of the booking data form so that it loads the  booking data form
             ChooseCourseForm courseForm = new ChooseCourseForm(language);
             courseForm.Show();
             this.Hide();
         }
 
-        private void spanishLanguageButton_Click_1(object sender, EventArgs e)
-        {
-            spanishLanguage = true;
-        }
-
-
+        //This code block is for the functions of the spanish language button
         private void germanLanguageButton_Click_1(object sender, EventArgs e)
         {
             germanLanguage = true;
+            String language = LanguageChecker();
+
+            //Creates an instance of the booking data form so that it loads the  booking data form
+            ChooseCourseForm courseForm = new ChooseCourseForm(language);
+            courseForm.Show();
+            this.Hide();
         }
 
         //This code block is used to check what is the language that user chose
+        //It returns a string on what language they have chosen
         private String LanguageChecker()
         {
             String ChosenLanguage = " ";

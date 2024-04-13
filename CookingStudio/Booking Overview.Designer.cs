@@ -129,11 +129,10 @@
             // 
             // confirmLabel
             // 
-            this.confirmLabel.AutoSize = true;
             this.confirmLabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmLabel.Location = new System.Drawing.Point(58, 451);
             this.confirmLabel.Name = "confirmLabel";
-            this.confirmLabel.Size = new System.Drawing.Size(455, 18);
+            this.confirmLabel.Size = new System.Drawing.Size(512, 42);
             this.confirmLabel.TabIndex = 56;
             this.confirmLabel.Text = "By confirming, you commit to taking part in the selected course.";
             // 
@@ -191,7 +190,7 @@
             // 
             this.UserChosenCourse.AutoSize = true;
             this.UserChosenCourse.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserChosenCourse.Location = new System.Drawing.Point(182, 328);
+            this.UserChosenCourse.Location = new System.Drawing.Point(182, 329);
             this.UserChosenCourse.Name = "UserChosenCourse";
             this.UserChosenCourse.Size = new System.Drawing.Size(111, 17);
             this.UserChosenCourse.TabIndex = 62;
