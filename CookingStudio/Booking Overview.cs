@@ -194,7 +194,10 @@ namespace CookingStudio
                 dbManager.ExecuteNonQuery(query, parameters);
 
                 // Show confirmation message to the user
-                MessageBox.Show("Booking confirmed and saved to the database.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ConfirmationForm confirm = new ConfirmationForm(language);
+                confirm.Show();
+                this.Hide();
+
             }
             catch (Exception ex)
             {
