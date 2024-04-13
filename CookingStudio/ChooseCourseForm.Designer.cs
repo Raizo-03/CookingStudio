@@ -31,14 +31,14 @@
             this.spanishTraditionalLabel = new System.Windows.Forms.Label();
             this.traditionalButton = new System.Windows.Forms.Button();
             this.vegetableButton = new System.Windows.Forms.Button();
-            this.spanishVegetableLabel = new System.Windows.Forms.Label();
+            this.spanishVegetarianLabel = new System.Windows.Forms.Label();
             this.grillFridayButton = new System.Windows.Forms.Button();
             this.spanishHealthyGrillLabel = new System.Windows.Forms.Label();
             this.grillSaturdayButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
             this.furtherButton = new System.Windows.Forms.Button();
             this.traditionalDatePicker = new System.Windows.Forms.DateTimePicker();
-            this.vegetableDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.vegetarianDatePicker = new System.Windows.Forms.DateTimePicker();
             this.freshfromgrillDatePicker = new System.Windows.Forms.DateTimePicker();
             this.priceTextbox = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -75,15 +75,15 @@
             this.vegetableButton.UseVisualStyleBackColor = true;
             this.vegetableButton.Click += new System.EventHandler(this.vegetableButton_Click);
             // 
-            // spanishVegetableLabel
+            // spanishVegetarianLabel
             // 
-            this.spanishVegetableLabel.AutoSize = true;
-            this.spanishVegetableLabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spanishVegetableLabel.Location = new System.Drawing.Point(82, 153);
-            this.spanishVegetableLabel.Name = "spanishVegetableLabel";
-            this.spanishVegetableLabel.Size = new System.Drawing.Size(238, 18);
-            this.spanishVegetableLabel.TabIndex = 2;
-            this.spanishVegetableLabel.Text = "Spanish: Vegetables and Healthy";
+            this.spanishVegetarianLabel.AutoSize = true;
+            this.spanishVegetarianLabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spanishVegetarianLabel.Location = new System.Drawing.Point(82, 153);
+            this.spanishVegetarianLabel.Name = "spanishVegetarianLabel";
+            this.spanishVegetarianLabel.Size = new System.Drawing.Size(235, 18);
+            this.spanishVegetarianLabel.TabIndex = 2;
+            this.spanishVegetarianLabel.Text = "Spanish: Vegetarian and Healthy";
             // 
             // grillFridayButton
             // 
@@ -117,15 +117,15 @@
             this.grillSaturdayButton.UseVisualStyleBackColor = true;
             this.grillSaturdayButton.Click += new System.EventHandler(this.grillSaturdayButton_Click);
             // 
-            // label1
+            // priceLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 401);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 18);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Price per Person";
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.Location = new System.Drawing.Point(82, 401);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(128, 18);
+            this.priceLabel.TabIndex = 8;
+            this.priceLabel.Text = "Price per Person";
             // 
             // furtherButton
             // 
@@ -147,13 +147,13 @@
             this.traditionalDatePicker.TabIndex = 10;
             this.traditionalDatePicker.ValueChanged += new System.EventHandler(this.traditionalDatePicker_ValueChanged);
             // 
-            // vegetableDatePicker
+            // vegetarianDatePicker
             // 
-            this.vegetableDatePicker.Location = new System.Drawing.Point(85, 209);
-            this.vegetableDatePicker.Name = "vegetableDatePicker";
-            this.vegetableDatePicker.Size = new System.Drawing.Size(200, 20);
-            this.vegetableDatePicker.TabIndex = 11;
-            this.vegetableDatePicker.ValueChanged += new System.EventHandler(this.vegetableDatePicker_ValueChanged);
+            this.vegetarianDatePicker.Location = new System.Drawing.Point(85, 209);
+            this.vegetarianDatePicker.Name = "vegetarianDatePicker";
+            this.vegetarianDatePicker.Size = new System.Drawing.Size(200, 20);
+            this.vegetarianDatePicker.TabIndex = 11;
+            this.vegetarianDatePicker.ValueChanged += new System.EventHandler(this.vegetarianDatePicker_ValueChanged);
             // 
             // freshfromgrillDatePicker
             // 
@@ -180,15 +180,15 @@
             this.ClientSize = new System.Drawing.Size(800, 526);
             this.Controls.Add(this.priceTextbox);
             this.Controls.Add(this.freshfromgrillDatePicker);
-            this.Controls.Add(this.vegetableDatePicker);
+            this.Controls.Add(this.vegetarianDatePicker);
             this.Controls.Add(this.traditionalDatePicker);
             this.Controls.Add(this.furtherButton);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.grillSaturdayButton);
             this.Controls.Add(this.grillFridayButton);
             this.Controls.Add(this.spanishHealthyGrillLabel);
             this.Controls.Add(this.vegetableButton);
-            this.Controls.Add(this.spanishVegetableLabel);
+            this.Controls.Add(this.spanishVegetarianLabel);
             this.Controls.Add(this.traditionalButton);
             this.Controls.Add(this.spanishTraditionalLabel);
             this.Name = "ChooseCourseForm";
@@ -204,14 +204,14 @@
         private System.Windows.Forms.Label spanishTraditionalLabel;
         private System.Windows.Forms.Button traditionalButton;
         private System.Windows.Forms.Button vegetableButton;
-        private System.Windows.Forms.Label spanishVegetableLabel;
+        private System.Windows.Forms.Label spanishVegetarianLabel;
         private System.Windows.Forms.Button grillFridayButton;
         private System.Windows.Forms.Label spanishHealthyGrillLabel;
         private System.Windows.Forms.Button grillSaturdayButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label priceLabel;
         private System.Windows.Forms.Button furtherButton;
         private System.Windows.Forms.DateTimePicker traditionalDatePicker;
-        private System.Windows.Forms.DateTimePicker vegetableDatePicker;
+        private System.Windows.Forms.DateTimePicker vegetarianDatePicker;
         private System.Windows.Forms.DateTimePicker freshfromgrillDatePicker;
         private System.Windows.Forms.Label priceTextbox;
     }

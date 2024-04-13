@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.overviewButton = new System.Windows.Forms.Button();
-            this.totalpriceTextbox = new System.Windows.Forms.TextBox();
             this.totalpriceLabel = new System.Windows.Forms.Label();
-            this.courseTextbox = new System.Windows.Forms.TextBox();
             this.courseLabel = new System.Windows.Forms.Label();
             this.peopleLabel = new System.Windows.Forms.Label();
             this.numofpeopleTextbox = new System.Windows.Forms.TextBox();
@@ -43,6 +41,8 @@
             this.lastnameLabel = new System.Windows.Forms.Label();
             this.firstnameTextbox = new System.Windows.Forms.TextBox();
             this.firstnameLabel = new System.Windows.Forms.Label();
+            this.courseTextbox = new System.Windows.Forms.Label();
+            this.totalpriceTextbox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // overviewButton
@@ -56,17 +56,6 @@
             this.overviewButton.UseVisualStyleBackColor = true;
             this.overviewButton.Click += new System.EventHandler(this.overviewButton_Click);
             // 
-            // totalpriceTextbox
-            // 
-            this.totalpriceTextbox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.totalpriceTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalpriceTextbox.Location = new System.Drawing.Point(191, 369);
-            this.totalpriceTextbox.Name = "totalpriceTextbox";
-            this.totalpriceTextbox.ReadOnly = true;
-            this.totalpriceTextbox.Size = new System.Drawing.Size(565, 25);
-            this.totalpriceTextbox.TabIndex = 70;
-            this.totalpriceTextbox.TextChanged += new System.EventHandler(this.totalpriceTextbox_TextChanged);
-            // 
             // totalpriceLabel
             // 
             this.totalpriceLabel.AutoSize = true;
@@ -76,16 +65,6 @@
             this.totalpriceLabel.Size = new System.Drawing.Size(88, 18);
             this.totalpriceLabel.TabIndex = 69;
             this.totalpriceLabel.Text = "Total Price:";
-            // 
-            // courseTextbox
-            // 
-            this.courseTextbox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.courseTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.courseTextbox.Location = new System.Drawing.Point(191, 321);
-            this.courseTextbox.Name = "courseTextbox";
-            this.courseTextbox.ReadOnly = true;
-            this.courseTextbox.Size = new System.Drawing.Size(565, 25);
-            this.courseTextbox.TabIndex = 68;
             // 
             // courseLabel
             // 
@@ -196,15 +175,35 @@
             this.firstnameLabel.TabIndex = 57;
             this.firstnameLabel.Text = "First Name";
             // 
+            // courseTextbox
+            // 
+            this.courseTextbox.AutoSize = true;
+            this.courseTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseTextbox.Location = new System.Drawing.Point(188, 328);
+            this.courseTextbox.Name = "courseTextbox";
+            this.courseTextbox.Size = new System.Drawing.Size(111, 17);
+            this.courseTextbox.TabIndex = 72;
+            this.courseTextbox.Text = "Course Chosen";
+            // 
+            // totalpriceTextbox
+            // 
+            this.totalpriceTextbox.AutoSize = true;
+            this.totalpriceTextbox.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalpriceTextbox.Location = new System.Drawing.Point(188, 376);
+            this.totalpriceTextbox.Name = "totalpriceTextbox";
+            this.totalpriceTextbox.Size = new System.Drawing.Size(42, 17);
+            this.totalpriceTextbox.TabIndex = 73;
+            this.totalpriceTextbox.Text = "Price";
+            // 
             // BookingDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 526);
-            this.Controls.Add(this.overviewButton);
             this.Controls.Add(this.totalpriceTextbox);
-            this.Controls.Add(this.totalpriceLabel);
             this.Controls.Add(this.courseTextbox);
+            this.Controls.Add(this.overviewButton);
+            this.Controls.Add(this.totalpriceLabel);
             this.Controls.Add(this.courseLabel);
             this.Controls.Add(this.peopleLabel);
             this.Controls.Add(this.numofpeopleTextbox);
@@ -227,9 +226,7 @@
         #endregion
 
         private System.Windows.Forms.Button overviewButton;
-        private System.Windows.Forms.TextBox totalpriceTextbox;
         private System.Windows.Forms.Label totalpriceLabel;
-        private System.Windows.Forms.TextBox courseTextbox;
         private System.Windows.Forms.Label courseLabel;
         private System.Windows.Forms.Label peopleLabel;
         private System.Windows.Forms.TextBox numofpeopleTextbox;
@@ -241,5 +238,7 @@
         private System.Windows.Forms.Label lastnameLabel;
         private System.Windows.Forms.TextBox firstnameTextbox;
         private System.Windows.Forms.Label firstnameLabel;
+        private System.Windows.Forms.Label courseTextbox;
+        private System.Windows.Forms.Label totalpriceTextbox;
     }
 }
