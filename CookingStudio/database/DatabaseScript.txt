@@ -11,6 +11,12 @@ CREATE TABLE IF NOT EXISTS Admin (
     Password VARCHAR(255) NOT NULL
 );
 
+-- Use the CookingStudio database
+USE CookingStudio;
+
+-- Insert the admin record
+INSERT INTO Admin (Username, Password) VALUES ('admin', '123');
+
 -- Create the Bookings table
 CREATE TABLE IF NOT EXISTS Bookings (
     BookingID INT AUTO_INCREMENT PRIMARY KEY,
