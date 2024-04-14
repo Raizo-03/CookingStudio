@@ -236,7 +236,7 @@ namespace CookingStudio
             }
             else
             {
-                priceTextbox.Text = "$ 40";
+                priceTextbox.Text = "€ 40";
             }
 
 
@@ -262,7 +262,7 @@ namespace CookingStudio
             }
             else
             {
-                priceTextbox.Text = "$ 50";
+                priceTextbox.Text = "€ 50";
             }
 
             //Sets the selected date of the user
@@ -287,7 +287,7 @@ namespace CookingStudio
             }
             else
             {
-                priceTextbox.Text = "$ 80";
+                priceTextbox.Text = "€ 80";
             }
 
             //Sets the selected date of the user
@@ -313,7 +313,7 @@ namespace CookingStudio
             }
             else
             {
-                priceTextbox.Text = "$ 80";
+                priceTextbox.Text = "€ 80";
             }
             //Sets the selected date of the user
             selectedDate = freshfromgrillDatePicker.Value;

@@ -171,7 +171,7 @@
             this.priceTextbox.Name = "priceTextbox";
             this.priceTextbox.Size = new System.Drawing.Size(92, 17);
             this.priceTextbox.TabIndex = 13;
-            this.priceTextbox.Text = "Price in USD";
+            this.priceTextbox.Text = "Price in EUR";
             // 
             // ChooseCourseForm
             // 
