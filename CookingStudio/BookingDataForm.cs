@@ -251,7 +251,7 @@ namespace CookingStudio
             }
             else
             {
-                totalpriceTextbox.Text = "$ " + totalPrice.ToString();
+                totalpriceTextbox.Text = "€ " + totalPrice.ToString();
 
             }
 

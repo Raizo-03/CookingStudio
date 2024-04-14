@@ -147,7 +147,7 @@ namespace CookingStudio
                     UserChosenCourse.Text = "Spanish: Healthy and Fresh from Grill";
                 }
                 //Sets the total price label 
-                UsersTotalPrice.Text = "$ " + totalPrice.ToString();
+                UsersTotalPrice.Text = "€ " + totalPrice.ToString();
             }
 
         }
